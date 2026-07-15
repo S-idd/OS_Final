@@ -29,18 +29,18 @@ int main() {
 
         scanf("%d", &len);
 
-       for (i = 0; i < 20; i++) {
+        for (i = 0; i < 20; i++) {
 
             if (i >= start && i < start + len){
 
                 printf("%d[A] ", i);
 
-	}else{
+	        }else{
 
                 printf("%d ", i);
 
-	}
-      }
+	        }
+        }
     }
 
     // ---------------- LINKED ----------------
@@ -59,7 +59,7 @@ int main() {
         for (i = 0; i < n; i++) {
 	
             scanf("%d", &b[i]); //Blocks Input 
-	}
+	    }
 
 
       
@@ -80,11 +80,13 @@ int main() {
             if (found){
 
                 printf("%d[A] ", i);
-	    }
+
+	        }
             else {
 
                 printf("%d ", i);
-	    }
+
+	        }
         }
 
         printf("\nChain: ");
@@ -93,9 +95,11 @@ int main() {
 
             printf("%d", b[i]);
 
-            if (i != n - 1)
+            if (i != n - 1){
 
                 printf(" -> ");
+                
+            }
 
         }
     }
